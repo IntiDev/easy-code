@@ -145,3 +145,7 @@ Finalmente observamos que más del 50% de las personas participan en comunidades
 Es así como podemos confirmar la necesidad de una red social, en la cual se pueda contar con la información más importante proveniente de diferentes plataformas específica de esta área, recursos útiles, un lugar en el que la interacción entre personas que están aprendiendo a programar o temas de programación sea más fácil y que se pueda compartir la información.
 
 ## PROTOTIPADO
+
+**SKETCH**
+
+**MOCK UP**
