@@ -38,6 +38,27 @@
                 <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
             </div>
         </section>
+        <section id="profile-section" class="profile-info">
+            <div class="profile-info">
+                <img class="ada-picture-profile" src="assets/images/user.png" alt="profile-section-picture">
+                <h1>Perfil</h1>
+                <div class="profile-info-user">
+                    <!--SE VA A MODAFICAR - ACTUALIZAR ESTA INFORMACIÓN-->
+                    <h5>Nombre:</h5>
+                    <h5>Empresa:</h5>
+                    <h5>Lenguajes de programación:</h5>
+                </div>
+            </div>
+            <div id="following" class="container-following">
+                <h3>Siguiendo</h3>
+            </div>
+            <div class="linkedin">
+                <!--AQUI VA LA INFO ADICIONAL DE REDES SOCIALES-->
+            </div>
+            <div class="github">
+                <!--AQUI VA LA INFO ADICIONAL DE REDES SOCIALES-->
+            </div>
+        </section>
     </div>
     <!--Rigth Section-->
     <div class="container-fluid">
@@ -94,18 +115,18 @@
     <!--Main Section-->
     <div class="container-fluid">
         <main id="main-container" class="row">
-            <section id="profile-section" class="profile-info">
-                <div class="profile-info">
-                    <h1>Perfil</h1>
-                </div>
-                <div id="following" class="container-following">
-                    <h3>Siguiendo</h3><!--
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">'
-                            <i class="confirm-conected fas fa-bolt"></i>
-                            <h5 class="mb-1">_Adalu Ramirez_</h5>
-                        </li>
-                    </ul>-->
+            <section id="profile-section-content" class="profile-info">
+                <div class="space-posts">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control exampleFormControlTextarea" rows="4" cols="60" placeholder="¿Qué proyecto estas planeando?"></textarea>
+                            <br>
+                            <button id="publish2" type="button" class="btn btn-primary">Publicar</button>
+                        </div>
+                    </form>
+                    <div id="download-picture">
+                        <!--AQUI VA LA INFO DE CARGAR-PUBLICAR LA FOTO-->
+                    </div>
                 </div>
             </section>
             <section id="newsfeed-section" class="newsfeed-info">
@@ -121,13 +142,12 @@
                 <br>
                 <form>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="60" placeholder="¿Qué proyecto estas planeando?"></textarea>
+                        <textarea class="form-control exampleFormControlTextarea" rows="4" cols="60" placeholder="¿Qué proyecto estas planeando?"></textarea>
                         <br>
-                        <button id="publish" type="button" class="btn btn-primary">Publicar</button>
+                        <button id="publish" type="button" class="btn btn-primary" >Publicar</button>
                     </div>
                 </form>
-                <!--Posts Section-->
-                <!--
+                <!--Posts Section--><!--
                 <div class="card">
                     <div class="card-body">
                         <p>Text</p>

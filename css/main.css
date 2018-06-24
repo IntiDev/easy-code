@@ -8,8 +8,6 @@ i {
     padding: 10px;
 }
 
-
-
 /*Navigation*/
 #nav-header {
     position: fixed;
@@ -20,11 +18,21 @@ i {
 
 /*Left Section*/
 
-#left-section {
+#left-section, #profile-section {
     margin-top: 80px;
     float: left;
     width: 25%;
     display: none;
+}
+
+#profile-section {
+    margin-left: 40px;
+}
+
+img.ada-picture-profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
 }
 
 /*Right Section*/
@@ -70,8 +78,12 @@ img.profile {
 
 /*Profile Section*/
 
-#profile-section {
+#profile-section, #profile-section-content {
     display: none;
+}
+
+#profile-section-content {
+    padding: 15px;
 }
 
 /*News Feed Section*/

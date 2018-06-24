@@ -4,6 +4,7 @@ $('#news-feed').click(function(){
     $('#rigth-section').css('display', 'block');
     $('#newsfeed-section').css('display', 'block');
     $('#profile-section').css('display', 'none');
+    $('#profile-section-content').css('display', 'none');
 })
 
 //Function that show news feed section
@@ -12,11 +13,12 @@ $('#profile').click(function(){
     $('#rigth-section').css('display', 'none');
     $('#newsfeed-section').css('display', 'none');
     $('#profile-section').css('display', 'block');
+    $('#profile-section-content').css('display', 'block');
 })
 
 //Function that obtains data
 function getTextData(){
-    var textInfo = $('#exampleFormControlTextarea1').val();
+    var textInfo = $('.exampleFormControlTextarea').val();
 
     //Empty fields validation 
     /*
@@ -27,7 +29,8 @@ function getTextData(){
     addTextData(textInfo);
 
     //Clean input
-    $('#exampleFormControlTextarea1').val('');
+    $('.exampleFormControlTextarea').val('');
+
 }
 
 var template = '<div class="card">'+
@@ -45,6 +48,7 @@ function addTextData(text){
     var finalTemplate = "";
     finalTemplate = template.replace("_Text_", text);
     $('#newsfeed-section').append(finalTemplate);
+    $('#profile-section-content').append(finalTemplate);
 }
 
 //Function that delete post
@@ -168,4 +172,6 @@ function addNewFollowed(newFollow){
 
 $(document).ready(function(){
     $('#publish').click(getTextData);
+    $('#publish2').click(getTextData);
+
 });
