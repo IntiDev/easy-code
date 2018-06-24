@@ -1,7 +1,7 @@
 /*General*/
 
 body {
-
+    margin: 0;
 }
 
 i {
@@ -11,10 +11,17 @@ i {
 
 
 /*Navigation*/
+#nav-header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+}
 
 /*Left Section*/
 
 #left-section {
+    margin-top: 80px;
     float: left;
     width: 25%;
     display: none;
@@ -23,6 +30,7 @@ i {
 /*Right Section*/
 
 #rigth-section {
+    margin-top: 80px;
     float: right;
     width: 25%;
     display: none;
@@ -48,7 +56,9 @@ i.confirm-conected {
 /*Main Section*/
 
 #main-container {
-    height: 500vh;
+    position: relative;
+    top: 80px;
+    height: 400vh;
 }
 
 img.profile {
@@ -79,12 +89,16 @@ img.profile {
     display: none;
 }
 
+#postLaboratoria2 {
+    display: none;
+}
+
 #postLevitha {
     display: none;
 }
 
-img.pic-meme {
-    height: 430px;
+img.pic-meme, img.lab-picture {
+    height: 300px;
     width: 100%;
 }
 

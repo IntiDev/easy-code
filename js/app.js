@@ -125,6 +125,7 @@ $('#btn-follow3').click(function(){
 
 $('#btn-follow4').click(function(){
     $('#postLaboratoria').show();
+    $('#postLaboratoria2').show();
     var infoFollowing = $('#follow4').text();
     addNewFollowed(infoFollowing);
     
@@ -167,5 +168,4 @@ function addNewFollowed(newFollow){
 
 $(document).ready(function(){
     $('#publish').click(getTextData);
-
 });

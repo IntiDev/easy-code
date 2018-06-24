@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <!--Header - Navigation-->
-    <header>
+    <header id="nav-header">
         <nav id="nav-bar">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
@@ -26,8 +25,8 @@
                 </li>
             </ul>
         </nav>
+        <hr>
     </header>
-    <hr>
     <!--Left Section-->
     <div class="container-fluid">
         <section id="left-section" class="row">
@@ -110,6 +109,16 @@
                 </div>
             </section>
             <section id="newsfeed-section" class="newsfeed-info">
+                <!--Topics buttons-->
+                <div class="topics">
+                    <button type="button" class="btn btn-outline-primary">HTML</button>
+                    <button type="button" class="btn btn-outline-secondary">CSS</button>
+                    <button type="button" class="btn btn-outline-success">REACT</button>
+                    <button type="button" class="btn btn-outline-warning">JAVASCRIPT</button>
+                    <button type="button" class="btn btn-outline-info">JQUERY</button>
+                    <button type="button" class="btn btn-outline-danger">MORE+</button>
+                </div>
+                <br>
                 <form>
                     <div class="form-group">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="60" placeholder="¿Qué proyecto estas planeando?"></textarea>
@@ -126,6 +135,16 @@
                         <a href="#"><i class="far fa-trash-alt"></i></a>
                     </div>
                 </div>-->
+                <div id="postLaboratoria2" class="card">
+                    <div class="card-body">
+                        <h4><img class="profile follow-people" src="assets/images/lab-logo.png" alt="laboratoria-logo">Laboratoria</h4>
+                        <p>We’re proud to launch our JavaScript Fellowship Program. An amazing opportunity for javascript engineers who want to improve the world. Come join our team in Latin America. Please help us spread the word! <a href="http://laboratoria.la/trabaja-con-nosotros/articulo/javascript-fellowship-program-laboratoria" target="_blank">https://goo.gl/KDih4j</a></p>
+                        <img class="lab-picture" src="assets/images/lab1.png" alt="lab-image">
+                        <a href="https://github.com/Laboratoria" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Comentar</button>
+                    </div>
+                </div>
                 <div id="postAda" class="card">
                     <div class="card-body">
                         <h4><img id="imgFollow1" class="profile follow-people" src="assets/images/ada.jpg" alt="ada-picture">Adalu Ramirez</h4>
