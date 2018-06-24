@@ -1,5 +1,15 @@
 /*General*/
 
+body {
+
+}
+
+i {
+    padding: 10px;
+}
+
+
+
 /*Navigation*/
 
 /*Left Section*/
@@ -7,6 +17,7 @@
 #left-section {
     float: left;
     width: 25%;
+    display: none;
 }
 
 /*Right Section*/
@@ -14,13 +25,67 @@
 #rigth-section {
     float: right;
     width: 25%;
+    display: none;
+}
+
+i.conected {
+    color: #3BE953;
+}
+
+i.absent {
+    color: #E9E63B;
+}
+
+i.disconnected {
+    color: #B8B8B3;
+}
+
+i.confirm-conected {
+    color: #E9E63B;
 }
 
 
 /*Main Section*/
 
 #main-container {
-    height: 800px;
+    height: 500vh;
+}
+
+img.profile {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/*Profile Section*/
+
+#profile-section {
+    display: none;
+}
+
+/*News Feed Section*/
+
+#newsfeed-section {
+    display: none;
+    margin-left: 5%;
+}
+
+#postAda {
+    display: none;
+}
+
+#postLaboratoria {
+    display: none;
+}
+
+#postLevitha {
+    display: none;
+}
+
+img.pic-meme {
+    height: 430px;
+    width: 100%;
 }
 
 /*Footer*/

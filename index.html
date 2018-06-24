@@ -4,27 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Easy Code</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <!--Navigation-->
-    <nav id="nav-bar">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">User</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sign In</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Settings</a>
-            </li>
-        </ul>
-    </nav>
+    <!--Header - Navigation-->
+    <header>
+        <nav id="nav-bar">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a id="news-feed" class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a id="profile" class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Salir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <hr>
     <!--Left Section-->
     <div class="container-fluid">
@@ -44,27 +46,48 @@
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small>3 days ago</small>
+                        <h5 class="mb-1">A quién seguir</h5>
                     </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small>Donec id elit non mi porta.</small>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
+                        <img class="profile follow-people" src="assets/images/lab-logo.png" alt="laboratoria-logo">
+                        <h5 id="follow4" class="mb-1">Laboratoria</h5>
+                        <small class="text-muted"><i class="conected fas fa-circle"></i></small>
                     </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
+                    <button id="btn-follow4" type="button" class="btn btn-primary btn-sm">Seguir</button>
+                </a>
+                <a id="container-follow1" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <img id="imgFollow1" class="profile follow-people" src="assets/images/ada.jpg" alt="ada-picture">
+                        <h5 id="follow1" class="mb-1">Adalu Ramirez</h5>
+                        <small class="text-muted"><i class="absent fas fa-circle"></i></small>
+                    </div>
+                    <button id="btn-follow1" type="button" class="btn btn-primary btn-sm">Seguir</button>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
+                        <img class="profile follow-people" src="assets/images/luly.jpg" alt="luly-picture">
+                        <h5 id="follow2" class="mb-1">Luly Atilano</h5>
+                        <small class="text-muted"><i class="disconnected fas fa-circle"></i></small>
                     </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
+                    <button id="btn-follow2" type="button" class="btn btn-primary btn-sm">Seguir</button>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <img class="profile follow-people" src="assets/images/lillys.jpg" alt="lillys-picture">
+                        <h5 id="follow3" class="mb-1">Lillys Hernández</h5>
+                        <small class="text-muted"><i class="conected fas fa-circle"></i></small>
+                    </div>
+                    <button id="btn-follow3" type="button" class="btn btn-primary btn-sm">Seguir</button>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <img class="profile follow-people" src="assets/images/levhita-arias.png" alt="levitha-picture">
+                        <h5 id="follow5" class="mb-1">Levhita Arias</h5>
+                        <small class="text-muted"><i class="conected fas fa-circle"></i></small>
+                    </div>
+                    <button id="btn-follow5" type="button" class="btn btn-primary btn-sm">Seguir</button>
                 </a>
             </div>
         </section>
@@ -73,21 +96,76 @@
     <div class="container-fluid">
         <main id="main-container" class="row">
             <section id="profile-section" class="profile-info">
-
+                <div class="profile-info">
+                    <h1>Perfil</h1>
+                </div>
+                <div id="following" class="container-following">
+                    <h3>Siguiendo</h3><!--
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">'
+                            <i class="confirm-conected fas fa-bolt"></i>
+                            <h5 class="mb-1">_Adalu Ramirez_</h5>
+                        </li>
+                    </ul>-->
+                </div>
             </section>
             <section id="newsfeed-section" class="newsfeed-info">
-
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="60" placeholder="¿Qué proyecto estas planeando?"></textarea>
+                        <br>
+                        <button id="publish" type="button" class="btn btn-primary">Publicar</button>
+                    </div>
+                </form>
+                <!--Posts Section-->
+                <!--
+                <div class="card">
+                    <div class="card-body">
+                        <p>Text</p>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                    </div>
+                </div>-->
+                <div id="postAda" class="card">
+                    <div class="card-body">
+                        <h4><img id="imgFollow1" class="profile follow-people" src="assets/images/ada.jpg" alt="ada-picture">Adalu Ramirez</h4>
+                        <p>Estoy aprendiendo sobre Python, ¿alguna recomendación?<i class="em em-thinking_face"></i></p>
+                        <a href="https://github.com/adaramirez" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Comentar</button>
+                    </div>
+                </div>
+                <div id="postLaboratoria" class="card">
+                    <div class="card-body">
+                        <h4><img class="profile follow-people" src="assets/images/lab-logo.png" alt="laboratoria-logo">Laboratoria</h4>
+                        <p>¿Por qué aprender a programar?<i class="em em-grinning_face_with_star_eyes"></i></p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VKo_lyvsZLg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <a href="https://github.com/Laboratoria" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Comentar</button>
+                    </div>
+                </div>
+                <div id="postLevitha" class="card">
+                    <div class="card-body">
+                        <h4><img class="profile follow-people" src="assets/images/levhita-arias.png" alt="levitha-picture">Levhita Arias</h4>
+                        <img class="pic-meme" src="assets/images/meme.jpeg" alt="meme">
+                        <a href="https://github.com/levhita" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>    
+                        <button type="button" class="btn btn-outline-primary btn-sm">Comentar</button>                    
+                    </div>
+                </div>
             </section>
         </main>
     </div>
     <!--Footer-->
     <div class="container-fluid">
-        <footer id="footer-container"class="row">
+        <footer id="footer-container" class="row">
             <p class="copyright">Copyright© EasyCode 2018</p>
         </footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="js/assets/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
