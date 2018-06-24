@@ -35,7 +35,7 @@ function getTextData(){
 
 var template = '<div class="card">'+
                     '<div class="card-body">'+
-                        '<h3>User Name</h3>'+
+                        '<h3><img class="sofia2" src="assets/images/chica1.png" alt="profile-section-picture">Sofia Rosas</h3>'+
                         '<p>_Text_</p>'+
                         '<a href="#"><i class="fas fa-heart"></i></a>'+
                         '<a onClick="deletePost()" href="#"><i class="far fa-trash-alt"></i></a>'+
