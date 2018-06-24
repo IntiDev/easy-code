@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Easy Code</title>
+    <link rel="icon" href="assets/images/logo.png"></link>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
@@ -40,22 +41,30 @@
         </section>
         <section id="profile-section" class="profile-info">
             <div class="profile-info">
-                <img class="sofia-picture-profile" src="assets/images/chica1.png" alt="profile-section-picture">
+                <img id="sofia" class="sofia-picture-profile" src="assets/images/chica1.png" alt="profile-section-picture">
                 <h1>Sofia</h1>
                 <div class="profile-info-user">
-                    <!--SE VA A MODAFICAR - ACTUALIZAR ESTA INFORMACIÓN-->
-                    <h5>Empresa:</h5>
-                    <h5>Lenguajes de programación:</h5>
+                    <div id="profileBadges">
+                      <img src="assets/images/badge1.png" alt="Badge">
+                      <img src="assets/images/badge2.png" alt="Badge">
+                      <img src="assets/images/badge4.png" alt="Badge">
+                    </div>
+                    <p><img id="jobLogo" src="assets/images/laboratoria.jpg" alt="">  Estudiante</p>
+                    <div id="userLanguages">
+                      <h5>Lenguajes de programación:</h5>
+                      <img src="assets/images/apps.png" alt="React">
+                      <img src="assets/images/css.png" alt="CSS">
+                      <img src="assets/images/html.png" alt="HTML">
+                      <img src="assets/images/js.png" alt="JS">
+                    </div>
                 </div>
             </div>
             <div id="following" class="container-following">
                 <h3>Siguiendo</h3>
             </div>
-            <div class="linkedin">
-                <!--AQUI VA LA INFO ADICIONAL DE REDES SOCIALES-->
-            </div>
-            <div class="github">
-                <!--AQUI VA LA INFO ADICIONAL DE REDES SOCIALES-->
+            <div id="redesUsuario" class="linkedin">
+                <a href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a>
+                <a href=""><img src="assets/images/github.png" alt="Github"></a>
             </div>
         </section>
     </div>
@@ -125,7 +134,19 @@
                     </form>
                     <div id="download-picture">
                         <!--AQUI VA LA INFO DE CARGAR-PUBLICAR LA FOTO-->
-                        <p>prueba</p>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">Album de fotos</div>
+                            <img id="albumCover" class="card-img-top" src="assets/images/albumCover.png" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Comparte imagenes con los demas miembros de la comunidad</p>
+                            <div id="myProgress">
+                              <div id="statusBar">0%</div>
+                            </div>
+                             <input type="file" value="upload" id="fileButton"/>
+                             <br>
+                             <button onclick="move()">Subir foto</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -203,6 +224,7 @@
         </footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="js/assets/bootstrap.min.js"></script>

@@ -86,6 +86,53 @@ img.profile, img.sofia2 {
     padding: 15px;
 }
 
+#sofia {
+  border-radius: 50%;
+}
+
+#profile-section {
+}
+
+
+#profileBadges img {
+  width: 20%;
+}
+
+#jobLogo {
+  width: 13%;
+  border-radius: 50%;
+}
+
+#userLanguages img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+#redesUsuario a  img {
+  width: 15%;
+}
+
+
+/*Upload Pictures*/
+
+#albumCover {
+  position: relative;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#statusBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
 /*News Feed Section*/
 
 #newsfeed-section {

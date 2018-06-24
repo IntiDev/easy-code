@@ -1,4 +1,4 @@
-//Function that show profile section 
+//Function that show profile section
 $('#news-feed').click(function(){
     $('#left-section').css('display', 'block');
     $('#rigth-section').css('display', 'block');
@@ -20,7 +20,7 @@ $('#profile').click(function(){
 function getTextData(){
     var textInfo = $('.exampleFormControlTextarea').val();
 
-    //Empty fields validation 
+    //Empty fields validation
     /*
     if(textInfo.length > 1 || textInfo != null) {
         $('#publish').removeAttr("disabled");
@@ -99,13 +99,13 @@ $('#btn-follow1').click(function(){
     $('#postAda').show();
     var infoFollowing = $('#follow1').text();
     addNewFollowed(infoFollowing);
-    
+
     var item = $(event.currentTarget);
     var info = item.parent();
 
     info.remove();
 
-}) 
+})
 
 $('#btn-follow2').click(function(){
     var infoFollowing = $('#follow2').text();
@@ -115,7 +115,7 @@ $('#btn-follow2').click(function(){
     var info = item.parent();
 
     info.remove();
-}) 
+})
 
 $('#btn-follow3').click(function(){
     var infoFollowing = $('#follow3').text();
@@ -125,31 +125,31 @@ $('#btn-follow3').click(function(){
     var info = item.parent();
 
     info.remove();
-}) 
+})
 
 $('#btn-follow4').click(function(){
     $('#postLaboratoria').show();
     $('#postLaboratoria2').show();
     var infoFollowing = $('#follow4').text();
     addNewFollowed(infoFollowing);
-    
+
     var item = $(event.currentTarget);
     var info = item.parent();
 
     info.remove();
 
-}) 
+})
 
 $('#btn-follow5').click(function(){
     $('#postLevitha').show();
     var infoFollowing = $('#follow5').text();
     addNewFollowed(infoFollowing);
-    
+
     var item = $(event.currentTarget);
     var info = item.parent();
 
     info.remove();
-}) 
+})
 
 
 var template2 = '<ul class="list-group">'+
@@ -174,4 +174,61 @@ $(document).ready(function(){
     $('#publish').click(getTextData);
     $('#publish2').click(getTextData);
 
+});
+
+function move() {
+  var elem = document.getElementById("statusBar");
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+var config = {
+  apiKey: "AIzaSyD7m-SNXr4XUXFoX9AqQTjIUW0cqxkTNKg",
+  authDomain: "easy-code-sn.firebaseapp.com",
+  databaseURL: "https://easy-code-sn.firebaseio.com",
+  projectId: "easy-code-sn",
+  storageBucket: "easy-code-sn.appspot.com",
+  messagingSenderId: "1075281073613"
+};
+firebase.initializeApp(config);
+
+//Get elements
+var uploader = document.getElementById('uploder');
+var fileButton = document.getElementById('fileButton');
+
+//Listen to file selection
+fileButton.addEventListener('change', function(e) {
+  //Get file
+  var file = e.target.files[0];
+  //Create a storage ref
+  var storageRef = firebase.storage().ref('user_fotos/' + file.name);
+  var imageRef = storageRef.child('')
+  //Upload file
+  var task= storageRef.put(file);
+  //Update progress bar
+  task.on('state_changed',
+
+  function progess(snapshot){
+    var percentage = (snapshot.bytesTransferred /
+    snapshot.totalBytes) * 100;
+    uploder.value= percentage;
+  },
+
+  function error (err) {
+
+  },
+
+  function complete () {
+
+  }
+);
 });
