@@ -369,4 +369,13 @@ p.copyright {
         text-align: center;
     }
 
+    .button-login {
+        margin-left: 27%;
+    }
+        
+    #easy-code-logo {
+        margin-left: 25%;
+        margin-top: 22%;
+    }
+
 }

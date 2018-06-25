@@ -1,5 +1,62 @@
 # Easy Code
 
+# Lyft
+
+* **Curso:** _Crea tu propia red social_
+* **Unidad:** _Crea tu propia red social_
+
+***
+
+En este ejercicio se desarrolla una red social para personas que aprenden sobre temas de programación por su propia cuenta.
+
+
+## Visualización desktop
+
+![Easy Code Desktop](assets/images/desktop1.png)
+
+![Easy Code Desktop](assets/images/desktop2.png)
+
+![Easy Code Desktop](assets/images/desktop2(1).png)
+
+![Easy Code Desktop](assets/images/desktop2(2).png)
+
+![Easy Code Desktop](assets/images/desktop2(1).png)
+
+![Easy Code Desktop](assets/images/desktop3.png)
+
+![Easy Code Desktop](assets/images/desktop4.png)
+
+![Easy Code Desktop](assets/images/desktop5.png)
+
+![Easy Code Desktop](assets/images/desktop2(1).png)
+
+![Easy Code Desktop](assets/images/desktop6.png)
+
+![Easy Code Desktop](assets/images/desktop7.png)
+
+![Easy Code Desktop](assets/images/desktop2(1).png)
+
+
+
+## Visualización mobile 
+
+![Easy Code Mobile](assets/images/mobile1.png)
+
+![Easy Code Mobile](assets/images/mobile2.png)
+
+![Easy Code Mobile](assets/images/mobile3.png)
+
+![Easy Code Mobile](assets/images/mobile4.png)
+
+![Easy Code Mobile](assets/images/mobile5.png)
+
+![Easy Code Mobile](assets/images/mobile6.png)
+
+![Easy Code Mobile](assets/images/mobile7.png)
+
+
+
+
 ## DESCUBRIMIENTO
 
 **LLUVIA DE IDEAS**
