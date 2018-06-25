@@ -1,3 +1,4 @@
+
 //Function that show profile section
 $('.menu-newsfeed').click(function(){
     $('#left-section').css('display', 'block');
@@ -6,6 +7,8 @@ $('.menu-newsfeed').click(function(){
     $('#profile-section').css('display', 'none');
     $('#profile-section-content').css('display', 'none');
     $('#images-right').css('display', 'none');
+    $('#first-view').css('display', 'none');
+    $('footer').css('display', 'block');
 })
 
 //Function that show news feed section
@@ -16,6 +19,7 @@ $('.menu-profile').click(function(){
     $('#profile-section').css('display', 'block');
     $('#profile-section-content').css('display', 'block');
     $('#images-right').css('display', 'block');
+    $('footer').css('display', 'block');
 })
 
 //Function that obtains data
