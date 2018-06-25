@@ -1,5 +1,5 @@
 //Function that show profile section
-$('#news-feed').click(function(){
+$('.menu-newsfeed').click(function(){
     $('#left-section').css('display', 'block');
     $('#rigth-section').css('display', 'block');
     $('#newsfeed-section').css('display', 'block');
@@ -9,7 +9,7 @@ $('#news-feed').click(function(){
 })
 
 //Function that show news feed section
-$('#profile').click(function(){
+$('.menu-profile').click(function(){
     $('#left-section').css('display', 'none');
     $('#rigth-section').css('display', 'none');
     $('#newsfeed-section').css('display', 'none');
@@ -232,5 +232,6 @@ $(document).ready(function(){
     $('#publish2').click(getTextData);
 
 });
+
 
 

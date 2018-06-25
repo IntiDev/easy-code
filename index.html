@@ -17,17 +17,19 @@
         <nav id="nav-bar">
             <a class="name-brand navbar-brand" href="#">
                 <h2 id="title-brand">Easy Code</h2>
-                <i class="burger-menu fas fa-bars"></i>
             </a>
-            <ul class="nav justify-content-end">
+            <ul id="list-icons" class=" nav justify-content-end">
                 <li class="nav-item">
-                    <a id="news-feed" class="nav-link active" href="#">Inicio</a>
+                    <a id="news-feed" class="menu-newsfeed nav-link active" href="#">Inicio</a>
+                    <i class="burger-menu menu-newsfeed fas fa-home"></i>
                 </li>
                 <li class="nav-item">
-                    <a id="profile" class="nav-link" href="#">Perfil</a>
+                    <a id="profile" class="menu-profile nav-link" href="#">Perfil</a>
+                    <i class="burger-menu menu-profile fa fa-user"></i>
                 </li>
                 <li class="nav-item">
-                    <a id="logout"class="nav-link" href="#">Salir</a>
+                    <a id="logout"class="logout nav-link" href="#">Salir</a>
+                    <i class="burger-menu fas fa-sign-out-alt"></i>
                 </li>
             </ul>
         </nav>
@@ -37,10 +39,10 @@
         <section id="left-section" class="row">
             <div class="col-sm-12 col-md-12 list-group">
                 <a href="#" id="interesting-info" class="direct-access list-group-item list-group-item-action active">Accesos directos</a>
-                <a href="https://stackoverflow.com/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/stacko.png" alt="stackoverflow-logo">Stack Overflow</a>
-                <a href="https://platzi.com/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/platzi.png" alt="platzi-logo">Platzi</a>
-                <a href="https://www.freecodecamp.org/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/freecodecamp.jpg" alt="freecodecamp-logo">Free Code Camp</a>
-                <a href="https://www.codecademy.com/es" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/codeacademy.jpg" alt="codecademy-logo">Codecademy</a>
+                <a href="https://stackoverflow.com/" class=" direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/stacko.png" alt="stackoverflow-logo"><span class="name-da">Stack Overflow</span></a>
+                <a href="https://platzi.com/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/platzi.png" alt="platzi-logo"><span class="name-da">Platzi</span></a>
+                <a href="https://www.freecodecamp.org/" class=" direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/freecodecamp.jpg" alt="freecodecamp-logo"><span class="name-da">Free Code Camp</span></a>
+                <a href="https://www.codecademy.com/es" class=" direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/codeacademy.jpg" alt="codecademy-logo"><span class="name-da">Codecademy</span></a>
             </div>
         </section>
         <section id="profile-section" class="profile-info">
@@ -49,28 +51,27 @@
                 <h1>Sofia</h1>
                 <div class="profile-info-user">
                     <div id="profileBadges">
-                        <img src="assets/images/badge1.png" alt="Badge">
-                        <img src="assets/images/badge2.png" alt="Badge">
-                        <img src="assets/images/badge4.png" alt="Badge">
+                        <img class="icons-p" src="assets/images/badge1.png" alt="Badge">
+                        <img class="icons-p" src="assets/images/badge2.png" alt="Badge">
+                        <img class="icons-p" src="assets/images/badge4.png" alt="Badge">
                     </div>
-                    <p><img id="jobLogo" src="assets/images/laboratoria.jpg" alt="">  Estudiante</p>
+                    <p><img id="jobLogo" class="icons-p" src="assets/images/laboratoria.jpg" alt="">  Estudiante</p>
                 </div>
             </div>
             <div id="following" class="container-following">
                 <h3 class="followingTo">Siguiendo</h3>
             </div>
             <div id="userLanguages">
-                <hr>
                 <h5 class="programming-languages">Lenguajes de programación:</h5>
-                <img src="assets/images/apps.png" alt="React">
-                <img src="assets/images/css.png" alt="CSS">
-                <img src="assets/images/html.png" alt="HTML">
-                <img src="assets/images/js.png" alt="JS">
+                <img class="icons-p" src="assets/images/apps.png" alt="React">
+                <img class="icons-p" src="assets/images/css.png" alt="CSS">
+                <img class="icons-p" src="assets/images/html.png" alt="HTML">
+                <img class="icons-p" src="assets/images/js.png" alt="JS">
             </div>
             <br>
             <div id="redesUsuario" class="linkedin">
-                <a href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a>
-                <a href=""><img src="assets/images/github.png" alt="Redsocial"></a>
+                <a class="icons-p" href="#"><img src="assets/images/linkedin.png" alt="Linkedin"></a>
+                <a class="icons-p" href="#"><img src="assets/images/github.png" alt="Redsocial"></a>
             </div>
         </section>
     </div>
@@ -235,8 +236,7 @@
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/assets/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
