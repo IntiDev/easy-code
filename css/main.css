@@ -2,20 +2,50 @@
 
 body {
     margin: 0;
+    font-family: 'Inconsolata', monospace;
 }
 
 i {
     padding: 10px;
 }
 
+#who-follow, #interesting-info {
+    background-color: #e0e0e0;
+    color:  black;
+    border: #e0e0e0;
+}
+
 /*Navigation*/
 #nav-header {
     position: fixed;
     width: 100%;
-    z-index: 5;
-    background-color: white;
+    z-index: 15;
+    background-color: #045B77;
+    color: white;
 }
 
+#news-feed, #profile, #logout {
+    color: white;
+    padding-top: 15px;
+}
+
+#title-brand {
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.name-brand {
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 10px;
+}
+
+i.burger-menu {
+    display: none;
+    color: white;
+}
 /*Left Section*/
 
 #left-section, #profile-section {
@@ -35,10 +65,37 @@ img.ada-picture-profile {
     border-radius: 50%;
 }
 
+.cont-info {
+    border-bottom: 1px solid grey;
+    padding: 0;
+}
+
+#profileBadges {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+h3.followingTo {
+    padding: 10px;
+}
+
+h5.programming-languages {
+    padding: 15px;
+}
+
+hr {
+    background-color: grey;
+}
+
+#redesUsuario {
+    border-top: 10px;
+}
+
+
 /*Right Section*/
 
-#rigth-section {
-    margin-top: 80px;
+#rigth-section, #images-right {
+    margin-top: 85px;
     float: right;
     width: 25%;
     display: none;
@@ -60,12 +117,27 @@ i.confirm-conected {
     color: #E9E63B;
 }
 
+#btn-follow1, #btn-follow2, #btn-follow3, #btn-follow4, #btn-follow5 {
+    background-color: #2DBEBB;
+    color: white;
+    border: #2DBEBB;
+}
+
+.small-letter {
+    font-size: 12px;
+}
+
+#rigth-section {
+    z-index: 7;
+}
+
+
 
 /*Main Section*/
 
 #main-container {
     position: relative;
-    top: 80px;
+    top: 85px;
     height: 400vh;
 }
 
@@ -74,6 +146,20 @@ img.profile, img.sofia2 {
     height: 50px;
     padding: 5px;
     border-radius: 50%;
+}
+
+#publish2, #publish {
+    background-color: #2DBEBB;
+    color: white;
+    border: #2DBEBB;
+}
+
+#first-textarea {
+    z-index: -1;
+}
+
+div.btn-direct-access {
+    display: none;
 }
 
 /*Profile Section*/
@@ -87,50 +173,46 @@ img.profile, img.sofia2 {
 }
 
 #sofia {
-  border-radius: 50%;
+    border-radius: 50%;
 }
-
-#profile-section {
-}
-
 
 #profileBadges img {
-  width: 20%;
+    width: 20%;
 }
 
 #jobLogo {
-  width: 13%;
-  border-radius: 50%;
+    width: 13%;
+    border-radius: 50%;
 }
 
 #userLanguages img {
-  width: 15%;
-  border-radius: 50%;
+    width: 15%;
+    border-radius: 50%;
 }
 
 #redesUsuario a  img {
-  width: 15%;
+    width: 15%;
 }
 
 
 /*Upload Pictures*/
 
 #albumCover {
-  position: relative;
+    position: relative;
 }
 
 #myProgress {
-  width: 100%;
-  background-color: #ddd;
+    width: 100%;
+    background-color: #ddd;
 }
 
 #statusBar {
-  width: 10%;
-  height: 30px;
-  background-color: #4CAF50;
-  text-align: center;
-  line-height: 30px;
-  color: white;
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
 }
 
 /*News Feed Section*/
@@ -162,3 +244,48 @@ img.pic-meme, img.lab-picture {
 }
 
 /*Footer*/
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #045B77;
+    color: white;
+}
+
+p.copyright {
+    padding: 25px;
+    align-content: center;
+}
+
+/* Media Query */
+
+@media screen and (min-width:320px ) and (max-width:576px){
+    h2#title-brand {
+        display: none;
+    }
+
+    i.burger-menu {
+        display: block;
+    }
+
+    #rigth-section {
+        position: absolute;
+        top: 55%;
+        left: 24%;
+        width: 80%;
+        z-index: 5;
+    }
+
+    section#images-right {
+        position: absolute;
+        top: 140%;
+        left: 2%;
+        width: 80%;
+        z-index: 3;
+    }
+
+    section#profile-section-content {
+        margin-left: 15px;
+    }
+
+}

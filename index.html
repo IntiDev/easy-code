@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Easy Code</title>
     <link rel="icon" href="assets/images/logo.png"></link>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
@@ -14,6 +15,10 @@
     <!--Header - Navigation-->
     <header id="nav-header">
         <nav id="nav-bar">
+            <a class="name-brand navbar-brand" href="#">
+                <h2 id="title-brand">Easy Code</h2>
+                <i class="burger-menu fas fa-bars"></i>
+            </a>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a id="news-feed" class="nav-link active" href="#">Inicio</a>
@@ -22,46 +27,47 @@
                     <a id="profile" class="nav-link" href="#">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Salir</a>
+                    <a id="logout"class="nav-link" href="#">Salir</a>
                 </li>
             </ul>
         </nav>
-        <hr>
     </header>
     <!--Left Section-->
     <div class="container-fluid">
         <section id="left-section" class="row">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active">Información</a>
-                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+            <div class="col-sm-12 col-md-12 list-group">
+                <a href="#" id="interesting-info" class="direct-access list-group-item list-group-item-action active">Accesos directos</a>
+                <a href="https://stackoverflow.com/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/stacko.png" alt="stackoverflow-logo">Stack Overflow</a>
+                <a href="https://platzi.com/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/platzi.png" alt="platzi-logo">Platzi</a>
+                <a href="https://www.freecodecamp.org/" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/freecodecamp.jpg" alt="freecodecamp-logo">Free Code Camp</a>
+                <a href="https://www.codecademy.com/es" class="direct-access list-group-item list-group-item-action" target="_blank"><img class="profile follow-people" src="assets/images/codeacademy.jpg" alt="codecademy-logo">Codecademy</a>
             </div>
         </section>
         <section id="profile-section" class="profile-info">
-            <div class="profile-info">
+            <div class="cont-info profile-info">
                 <img id="sofia" class="sofia-picture-profile" src="assets/images/chica1.png" alt="profile-section-picture">
                 <h1>Sofia</h1>
                 <div class="profile-info-user">
                     <div id="profileBadges">
-                      <img src="assets/images/badge1.png" alt="Badge">
-                      <img src="assets/images/badge2.png" alt="Badge">
-                      <img src="assets/images/badge4.png" alt="Badge">
+                        <img src="assets/images/badge1.png" alt="Badge">
+                        <img src="assets/images/badge2.png" alt="Badge">
+                        <img src="assets/images/badge4.png" alt="Badge">
                     </div>
                     <p><img id="jobLogo" src="assets/images/laboratoria.jpg" alt="">  Estudiante</p>
-                    <div id="userLanguages">
-                      <h5>Lenguajes de programación:</h5>
-                      <img src="assets/images/apps.png" alt="React">
-                      <img src="assets/images/css.png" alt="CSS">
-                      <img src="assets/images/html.png" alt="HTML">
-                      <img src="assets/images/js.png" alt="JS">
-                    </div>
                 </div>
             </div>
             <div id="following" class="container-following">
-                <h3>Siguiendo</h3>
+                <h3 class="followingTo">Siguiendo</h3>
             </div>
+            <div id="userLanguages">
+                <hr>
+                <h5 class="programming-languages">Lenguajes de programación:</h5>
+                <img src="assets/images/apps.png" alt="React">
+                <img src="assets/images/css.png" alt="CSS">
+                <img src="assets/images/html.png" alt="HTML">
+                <img src="assets/images/js.png" alt="JS">
+            </div>
+            <br>
             <div id="redesUsuario" class="linkedin">
                 <a href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a>
                 <a href=""><img src="assets/images/github.png" alt="Redsocial"></a>
@@ -70,9 +76,9 @@
     </div>
     <!--Rigth Section-->
     <div class="container-fluid">
-        <section id="rigth-section" class="row">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+        <section id="rigth-section" class="col-sm-12 row">
+            <div class="col-sm-12 col-md-12 list-group">
+                <a id="who-follow" href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">A quién seguir</h5>
                     </div>
@@ -119,6 +125,26 @@
                 </a>
             </div>
         </section>
+        <!--Download Picture Section-->
+        <section id="images-right">
+            <div id="download-picture">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Album de fotos</div>
+                    <div id="repl-img">
+                        <img id="albumCover" class="card-img-top" src="assets/images/albumCover.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">¡Comparte imagenes con los miembros de la comunidad!</p>
+                    <div id="myProgress">
+                        <div id="statusBar">0%</div>
+                    </div>
+                    <input class="small-letter"type="file" value="upload" id="fileButton"/>
+                    <br>
+                    <button id="upload-picture" onclick="move()">Subir foto</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <!--Main Section-->
     <div class="container-fluid">
@@ -132,26 +158,10 @@
                             <button id="publish2" type="button" class="btn btn-primary">Publicar</button>
                         </div>
                     </form>
-                    <div id="download-picture">
-                        <!--AQUI VA LA INFO DE CARGAR-PUBLICAR LA FOTO-->
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">Album de fotos</div>
-                            <img id="albumCover" class="card-img-top" src="assets/images/albumCover.png" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">Comparte imagenes con los demas miembros de la comunidad</p>
-                            <div id="myProgress">
-                              <div id="statusBar">0%</div>
-                            </div>
-                             <input type="file" value="upload" id="fileButton"/>
-                             <br>
-                             <button onclick="move()">Subir foto</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
-            <section id="newsfeed-section" class="newsfeed-info">
-                <!--Topics buttons-->
+            <section id="newsfeed-section" class="col-sm-12 col-md-12 newsfeed-info">
+            <!--Topics buttons-->
                 <div class="topics">
                     <button type="button" class="btn btn-outline-primary">HTML</button>
                     <button type="button" class="btn btn-outline-secondary">CSS</button>
@@ -161,7 +171,7 @@
                     <button type="button" class="btn btn-outline-danger">MORE+</button>
                 </div>
                 <br>
-                <form>
+                <form id="first-textarea">
                     <div class="form-group">
                         <textarea class="form-control exampleFormControlTextarea" rows="4" cols="60" placeholder="¿Qué proyecto estas planeando?"></textarea>
                         <br>

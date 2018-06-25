@@ -147,8 +147,11 @@ Es así como podemos confirmar la necesidad de una red social, en la cual se pue
 ## PROTOTIPADO
 
 **SKETCH**
+
 ![Sketch](assets/images/firstsketch.png)
+
 ![Sketch](assets/images/uxsketch.jpg)
 
 **MOCK UP**
+
 ![Mockup](assets/images/mockup.png)
