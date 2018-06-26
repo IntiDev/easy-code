@@ -1,7 +1,5 @@
 # Easy Code
 
-# Lyft
-
 * **Curso:** _Crea tu propia red social_
 * **Unidad:** _Crea tu propia red social_
 
