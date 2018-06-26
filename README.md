@@ -10,9 +10,13 @@ En este ejercicio se desarrolla una red social para personas que aprenden sobre 
 
 ## Visualización desktop
 
+**Perfil**
+
 ![Easy Code Desktop](assets/images/desktop2(2).png)
 
 ![Easy Code Desktop](assets/images/desktop2(1).png)
+
+**Inicio**
 
 ![Easy Code Desktop](assets/images/desktop5.png)
 
@@ -28,11 +32,15 @@ En este ejercicio se desarrolla una red social para personas que aprenden sobre 
 
 ## Visualización mobile 
 
+**Perfil**
+
 ![Easy Code Mobile](assets/images/mobile2.png)
 
 ![Easy Code Mobile](assets/images/mobile3.png)
 
 ![Easy Code Mobile](assets/images/mobile4.png)
+
+**Inicio**
 
 ![Easy Code Mobile](assets/images/mobile5.png)
 
