@@ -15,34 +15,6 @@ i {
     border: #e0e0e0;
 }
 
-#first-view {
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/images/easycode.gif');
-    background-position: center;
-    background-size: cover;
-    display: block;
-}
-
-.button-login {
-    margin-left: 45%;
-}
-
-.button-login, .button-signup {
-    margin-top: 50px;
-}
-
-#easy-code, #easy-code-logo{
-    font-size: 20vh;
-    margin-top: 10px;
-    color: white;
-}
-
-#easy-code-logo {
-    text-align: center;
-    margin-top: 15%;
-}
-
 
 /*Navigation*/
 #nav-header {
@@ -77,7 +49,15 @@ i.burger-menu {
 }
 /*Left Section*/
 
-#left-section, #profile-section {
+#left-section {
+    margin-top: 80px;
+    float: left;
+    width: 25%;
+    display: block;
+}
+
+
+#profile-section {
     margin-top: 80px;
     float: left;
     width: 25%;
@@ -126,7 +106,14 @@ h5.programming-languages {
 
 /*Right Section*/
 
-#rigth-section, #images-right {
+#rigth-section {
+    margin-top: 85px;
+    float: right;
+    width: 25%;
+    display: block;
+}
+
+#images-right {
     margin-top: 85px;
     float: right;
     width: 25%;
@@ -250,7 +237,7 @@ div.btn-direct-access {
 /*News Feed Section*/
 
 #newsfeed-section {
-    display: none;
+    display: block;
     margin-left: 5%;
 }
 
@@ -283,7 +270,7 @@ footer {
     background-color: #045B77;
     color: white;
     margin: 0;
-    display: none;
+    display: block;
 }
 
 p.copyright {
@@ -363,13 +350,4 @@ p.copyright {
         font-size: 12px;
         text-align: center;
     }
-
-    .button-login {
-        margin-left: 27%;
-    }
-        
-    #easy-code-logo {
-        margin-top: 15%;
-    }
-
 }
