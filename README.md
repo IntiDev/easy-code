@@ -12,17 +12,13 @@ En este ejercicio se desarrolla una red social para personas que aprenden sobre 
 
 ![Easy Code Desktop](assets/images/desktop.png)
 
-![Easy Code Desktop](assets/images/desktop2.png)
-
-![Easy Code Desktop](assets/images/desktop2(1).png)
-
 ![Easy Code Desktop](assets/images/desktop2(2).png)
 
 ![Easy Code Desktop](assets/images/desktop2(1).png)
 
-![Easy Code Desktop](assets/images/desktop3.png)
 
-![Easy Code Desktop](assets/images/desktop4.png)
+
+
 
 ![Easy Code Desktop](assets/images/desktop5.png)
 
